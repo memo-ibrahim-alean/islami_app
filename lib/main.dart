@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/features/layout/pages/layout_page.dart';
 import 'package:islami_app/features/splash/pages/splash_page.dart';
 
 void main() {
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         SplashPage.routeName: (_) {
           return const SplashPage();
         },
+        LayoutPage.routeName: (_) {
+          return const LayoutPage();
+        }
       },
     );
   }

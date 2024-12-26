@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:islami_app/core/constants/app_assets.dart';
+import 'package:islami_app/features/layout/pages/layout_page.dart';
 
 class SplashPage extends StatefulWidget {
   static String routeName = "splash";
@@ -19,6 +20,15 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Navigator.pushReplacementNamed(
+          context,
+          LayoutPage.routeName,
+        );
+      },
+    );
   }
 
   @override
