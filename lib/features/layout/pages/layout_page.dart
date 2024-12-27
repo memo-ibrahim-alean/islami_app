@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/core/constants/app_assets.dart';
 import 'package:islami_app/core/theme/app_colors.dart';
+import 'package:islami_app/features/layout/pages/quran_tab.dart';
+import 'package:islami_app/features/layout/pages/radio_tab.dart';
+import 'package:islami_app/features/layout/pages/sbha_tab.dart';
+import 'package:islami_app/features/layout/pages/times_tab.dart';
 
 import '../widget/custom_nav_bar_item.dart';
+import 'hadith_tab.dart';
 
 class LayoutPage extends StatefulWidget {
   static String routeName = "/layout";
@@ -16,10 +21,18 @@ class LayoutPage extends StatefulWidget {
 class _LayoutPageState extends State<LayoutPage> {
   int selectedIndex = 0;
 
+  List<Widget> tabs = [
+    QuranTab(),
+    HadithTab(),
+    SbhaTab(),
+    RadioTab(),
+    TimesTab(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white,
+      backgroundColor: Colors.transparent,
       bottomNavigationBar: BottomNavigationBar(
         onTap: (index) {
           selectedIndex = index;
@@ -74,6 +87,7 @@ class _LayoutPageState extends State<LayoutPage> {
           ),
         ],
       ),
+      body: tabs[selectedIndex],
     );
   }
 }
