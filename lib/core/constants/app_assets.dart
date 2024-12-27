@@ -14,4 +14,6 @@ class AppAssets {
   static String radioIcn = "assets/icons/radio.png";
   static String timesIcn = "assets/icons/times.png";
   static String hadithBG = "assets/images/hadith_bg.png";
+  static String introScreenOneImg = "assets/images/intro_screen_1.png";
+  static String introScreenLogo = "assets/images/intro_screen_logo.png";
 }

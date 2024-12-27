@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/features/layout/pages/layout_page.dart';
+import 'package:islami_app/features/onbording/pages/page_view.dart';
 import 'package:islami_app/features/splash/pages/splash_page.dart';
 
 void main() {
@@ -20,7 +21,10 @@ class MyApp extends StatelessWidget {
         },
         LayoutPage.routeName: (_) {
           return const LayoutPage();
-        }
+        },
+        PageViewExample.routeName: (_) {
+          return const PageViewExample();
+        },
       },
     );
   }
