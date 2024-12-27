@@ -176,7 +176,7 @@ class CustomPageIndicator extends StatelessWidget {
             duration: const Duration(milliseconds: 300),
             margin: const EdgeInsets.symmetric(horizontal: 4.0),
             height: 12.0,
-            width: index == currentPageIndex ? 18.0 : 14.0,
+            width: index == currentPageIndex ? 24.0 : 14.0,
             decoration: BoxDecoration(
               color: index == currentPageIndex ? selectedColor : color,
               borderRadius: BorderRadius.circular(6.0),
