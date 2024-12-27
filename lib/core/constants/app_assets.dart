@@ -16,5 +16,6 @@ class AppAssets {
   static String hadithBG = "assets/images/hadith_bg.png";
   static String introScreenOneImg = "assets/images/intro_screen_1.png";
   static String introScreenTwoImg = "assets/images/intro_screen_2.png";
+  static String introScreenThreeImg = "assets/images/intro_screen_3.png";
   static String introScreenLogo = "assets/images/intro_screen_logo.png";
 }
