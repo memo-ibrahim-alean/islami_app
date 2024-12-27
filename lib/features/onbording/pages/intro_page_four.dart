@@ -35,7 +35,7 @@ class IntroPageFour extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Praise the name of your Lord, the Most High',
+                  'Praise the name of your Lord, the Most\nHigh',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

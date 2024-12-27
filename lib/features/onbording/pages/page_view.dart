@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/core/theme/app_colors.dart';
+import 'package:islami_app/features/layout/pages/layout_page.dart';
 
 import 'intro_page_five.dart';
 import 'intro_page_four.dart';
@@ -38,8 +39,6 @@ class _PageViewExampleState extends State<PageViewExample>
 
   @override
   Widget build(BuildContext context) {
-    // final TextTheme textTheme = Theme.of(context).textTheme;
-
     return Stack(
       alignment: Alignment.bottomCenter,
       children: <Widget>[
@@ -79,6 +78,32 @@ class _PageViewExampleState extends State<PageViewExample>
       curve: Curves.easeInOut,
     );
   }
+
+  void _navigateToLayoutPage(BuildContext context) {
+    Navigator.pushReplacement(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) => LayoutPage(),
+        transitionDuration: Duration(milliseconds: 400),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          const begin = Offset(1.0, 0.0);
+          const end = Offset.zero;
+          const curve = Curves.ease;
+
+          final tween = Tween(begin: begin, end: end);
+          final curvedAnimation = CurvedAnimation(
+            parent: animation,
+            curve: curve,
+          );
+
+          return SlideTransition(
+            position: tween.animate(curvedAnimation),
+            child: child,
+          );
+        },
+      ),
+    );
+  }
 }
 
 class PageIndicator extends StatelessWidget {
@@ -97,8 +122,6 @@ class PageIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final ColorScheme colorScheme = Theme.of(context).colorScheme;
-
     return Padding(
       padding: const EdgeInsets.only(bottom: 30),
       child: Row(
@@ -132,9 +155,10 @@ class PageIndicator extends StatelessWidget {
             padding: EdgeInsets.zero,
             onPressed: () {
               if (currentPageIndex == totalPages - 1) {
-                return;
+                _navigateToLayoutPage(context);
+              } else {
+                onUpdateCurrentPageIndex(currentPageIndex + 1);
               }
-              onUpdateCurrentPageIndex(currentPageIndex + 1);
             },
             icon: Text(
               'Next',
@@ -145,6 +169,32 @@ class PageIndicator extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  void _navigateToLayoutPage(BuildContext context) {
+    Navigator.pushReplacement(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) => LayoutPage(),
+        transitionDuration: Duration(milliseconds: 400),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          const begin = Offset(1.0, 0.0);
+          const end = Offset.zero;
+          const curve = Curves.ease;
+
+          final tween = Tween(begin: begin, end: end);
+          final curvedAnimation = CurvedAnimation(
+            parent: animation,
+            curve: curve,
+          );
+
+          return SlideTransition(
+            position: tween.animate(curvedAnimation),
+            child: child,
+          );
+        },
       ),
     );
   }

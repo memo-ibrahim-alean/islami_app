@@ -18,5 +18,6 @@ class AppAssets {
   static String introScreenTwoImg = "assets/images/intro_screen_2.png";
   static String introScreenThreeImg = "assets/images/intro_screen_3.png";
   static String introScreenFourImg = "assets/images/intro_screen_4.png";
+  static String introScreenFiveImg = "assets/images/intro_screen_5.png";
   static String introScreenLogo = "assets/images/intro_screen_logo.png";
 }
