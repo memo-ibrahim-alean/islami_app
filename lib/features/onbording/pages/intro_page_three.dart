@@ -23,7 +23,7 @@ class IntroPageThree extends StatelessWidget {
                   image: AssetImage(AppAssets.introScreenLogo),
                 ),
                 Image(
-                  width: size.width * 0.87,
+                  width: size.width * 0.9,
                   image: AssetImage(AppAssets.introScreenThreeImg),
                 ),
                 Text(

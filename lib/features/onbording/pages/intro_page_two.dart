@@ -23,7 +23,7 @@ class IntroPageTwo extends StatelessWidget {
                   image: AssetImage(AppAssets.introScreenLogo),
                 ),
                 Image(
-                  width: size.width * 0.87,
+                  width: size.width * 0.86,
                   image: AssetImage(AppAssets.introScreenTwoImg),
                 ),
                 Text(
