@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/core/theme/app_colors.dart';
-import 'package:islami_app/features/layout/pages/layout_page.dart';
+import 'package:islami_app/features/layout/layout_page.dart';
 
 import 'intro_page_five.dart';
 import 'intro_page_four.dart';
