@@ -5,4 +5,5 @@ class AppColors {
   static Color secondaryColor = const Color(0xff202020);
   static Color introScreenColor = const Color(0xff707070);
   static Color white = const Color(0xffFFFFFF);
+  static Color titleTextColor = const Color(0xFFFEFFE8);
 }
