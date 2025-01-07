@@ -27,6 +27,7 @@ class RecentCardWidget extends StatelessWidget {
               Text(
                 quranData.suraNameEn,
                 style: const TextStyle(
+                  fontFamily: "Janna",
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -34,6 +35,7 @@ class RecentCardWidget extends StatelessWidget {
               Text(
                 quranData.suraNameAr,
                 style: const TextStyle(
+                  fontFamily: "Janna",
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -41,6 +43,7 @@ class RecentCardWidget extends StatelessWidget {
               Text(
                 "${quranData.suraVerses} Verses",
                 style: const TextStyle(
+                  fontFamily: "Janna",
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                 ),

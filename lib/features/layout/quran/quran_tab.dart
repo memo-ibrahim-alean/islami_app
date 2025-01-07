@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/core/theme/app_colors.dart';
+import 'package:islami_app/features/layout/quran/quran_details_view.dart';
 import 'package:islami_app/features/layout/quran/widgets/recent_card_widget.dart';
 import 'package:islami_app/features/layout/quran/widgets/sura_card_widget.dart';
 import 'package:islami_app/models/quran_data.dart';
@@ -584,13 +585,15 @@ class QuranTab extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
+                    fontFamily: "Janna",
                     color: AppColors.titleTextColor,
                   ),
                   cursorColor: AppColors.primaryColor,
                   decoration: InputDecoration(
                     hintText: 'Sura Name',
                     hintStyle: TextStyle(
-                      fontSize: 16,
+                      fontSize: 18,
+                      fontFamily: "Janna",
                       fontWeight: FontWeight.bold,
                       color: AppColors.titleTextColor,
                     ),
@@ -631,7 +634,8 @@ class QuranTab extends StatelessWidget {
                   'Most Recently Read',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontFamily: "Janna",
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: AppColors.titleTextColor,
                   ),
@@ -655,7 +659,8 @@ class QuranTab extends StatelessWidget {
                   'Sura List',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 20,
+                    fontFamily: "Janna",
                     fontWeight: FontWeight.bold,
                     color: AppColors.titleTextColor,
                   ),
@@ -665,8 +670,17 @@ class QuranTab extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.vertical,
-                itemBuilder: (context, index) => SuraCardWidget(
-                  quranData: quranDataList[index],
+                itemBuilder: (context, index) => GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      QuranDetailsView.routeName,
+                      arguments: quranDataList[index],
+                    );
+                  },
+                  child: SuraCardWidget(
+                    quranData: quranDataList[index],
+                  ),
                 ),
                 separatorBuilder: (context, index) => const Divider(
                   endIndent: 60,

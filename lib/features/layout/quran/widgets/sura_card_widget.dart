@@ -27,7 +27,8 @@ class SuraCardWidget extends StatelessWidget {
               child: Text(
                 quranData.suraId,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontFamily: "Janna",
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: AppColors.white,
                 ),
@@ -41,7 +42,8 @@ class SuraCardWidget extends StatelessWidget {
               Text(
                 quranData.suraNameEn,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 21,
+                  fontFamily: "Janna",
                   fontWeight: FontWeight.bold,
                   color: AppColors.white,
                 ),
@@ -50,9 +52,10 @@ class SuraCardWidget extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                quranData.suraVerses,
+                '${quranData.suraVerses} verses',
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 16,
+                  fontFamily: "Janna",
                   fontWeight: FontWeight.bold,
                   color: AppColors.white,
                 ),
@@ -63,7 +66,8 @@ class SuraCardWidget extends StatelessWidget {
           Text(
             quranData.suraNameAr,
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 21,
+              fontFamily: "Janna",
               fontWeight: FontWeight.bold,
               color: AppColors.white,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/features/layout/layout_page.dart';
+import 'package:islami_app/features/layout/quran/quran_details_view.dart';
 import 'package:islami_app/features/onbording/pages/page_view.dart';
 import 'package:islami_app/features/splash/pages/splash_page.dart';
 
@@ -16,15 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: SplashPage.routeName,
       routes: {
-        SplashPage.routeName: (_) {
-          return const SplashPage();
-        },
-        LayoutPage.routeName: (_) {
-          return const LayoutPage();
-        },
-        PageViewExample.routeName: (_) {
-          return const PageViewExample();
-        },
+        SplashPage.routeName: (_) => const SplashPage(),
+        LayoutPage.routeName: (_) => const LayoutPage(),
+        PageViewExample.routeName: (_) => PageViewExample(),
+        QuranDetailsView.routeName: (_) => QuranDetailsView(),
       },
     );
   }
