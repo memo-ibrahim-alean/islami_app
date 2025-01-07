@@ -73,7 +73,7 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
               child: ListView.builder(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 itemBuilder: (context, index) => Text(
-                  '${versesList[index]} [${index + 1}]',
+                  '[${index + 1}] ${versesList[index]}',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: "Janna",
