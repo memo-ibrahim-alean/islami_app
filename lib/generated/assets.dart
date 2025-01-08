@@ -126,6 +126,8 @@ class Assets {
   static const String iconsSuraNumberIcn = 'assets/icons/sura_number_icn.png';
   static const String iconsTimes = 'assets/icons/times.png';
   static const String imagesHadithBg = 'assets/images/hadith_bg.png';
+  static const String imagesHadithItemBackground =
+      'assets/images/hadith_item_background.png';
   static const String imagesIntroScreen1 = 'assets/images/intro_screen_1.png';
   static const String imagesIntroScreen2 = 'assets/images/intro_screen_2.png';
   static const String imagesIntroScreen3 = 'assets/images/intro_screen_3.png';
@@ -135,6 +137,8 @@ class Assets {
       'assets/images/intro_screen_logo.png';
   static const String imagesIslam = 'assets/images/islam.png';
   static const String imagesQuranBg = 'assets/images/quran_bg.png';
+  static const String imagesSouraDetailsScreen =
+      'assets/images/soura_details_screen.png';
   static const String imagesSplashBg = 'assets/images/splash_bg.png';
   static const String imagesSplashBrand = 'assets/images/splash_brand.png';
   static const String imagesSplashGlow = 'assets/images/splash_glow.png';

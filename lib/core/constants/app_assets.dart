@@ -21,6 +21,8 @@ class AppAssets {
   static String introScreenFiveImg = "assets/images/intro_screen_5.png";
   static String introScreenLogo = "assets/images/intro_screen_logo.png";
   static String quranDetailsImg = "assets/images/soura_details_screen.png";
+  static String hadithItemBackgroundImg =
+      "assets/images/hadith_item_background.png";
   static String recentImage = "assets/icons/recent_img.png";
   static String suraNumberIcn = "assets/icons/sura_number_icn.png";
 }

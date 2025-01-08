@@ -13,6 +13,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   animate_do: ^3.3.4
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +28,7 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/files/
+    - assets/files/Hadeeth/
   fonts:
     - family: "Janna"
       fonts:
